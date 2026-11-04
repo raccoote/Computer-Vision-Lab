@@ -32,4 +32,4 @@ Last but not least, I used ChatGPT to create a front end website environment so 
 Results
 
 Interpolation:
-![alt text](part1_image_processing/results/interpolation result.png)
+![alt text](part1_image_processing/results/interpolation_chess.png)
