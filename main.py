@@ -2,5 +2,5 @@ from part1_image_processing.experiments import aliasing_experiment, interpolatio
 
 
 if __name__ == "__main__":
-    aliasing_experiment("chess.png", 4)
-    interpolation_experiment("chess.png", 2)
+    aliasing_experiment("circle.png", 4)
+    #interpolation_experiment("chess.png", 2)

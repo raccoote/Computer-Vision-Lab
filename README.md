@@ -28,8 +28,19 @@ After I completed the implementation, I also asked for advice for my file struct
 Last but not least, I used ChatGPT to create a front end website environment so that any user can run the pipeline and see the results!
 
 
-
 Results
 
-Interpolation:
+Aliasing:
+![alt text](part1_image_processing/results/aliasing_cat.png)
+
+In the middle image, downsampling without filtering causes sharp edges (the cat's whiskers) to become jittery and pixelated. In the right image, Gaussian pre-filtering reduces this effect by smoothing high-frequency details before downsampling, giving a smoother result.
+
+![alt text](part1_image_processing/results/aliasing_circle.png)
+
+A more extreme example of aliasing. In the middle image, downsampling without filtering creates circular patterns (Moiré artefacts), caused by high-frequency details being incorrectly represented at the lower resolution. In the right image, filtered with a Gaussian kernel (\(\sigma=4\)), shows significantly fewer aliasing artefacts and smoother patterns. However, we notice that Gaussian Filtering comes with a trade off: increasing sigma reduces aliasing but also reduces image sharpness and detail, resulting in a smooth, gray "fog".
+
+Interpolation
 ![alt text](part1_image_processing/results/interpolation_chess.png)
+
+Difference: 2.72 dB
+Bilinear interpolation achieves better reconstruction quality for this image!
